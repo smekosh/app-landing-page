@@ -1,0 +1,30 @@
+/* base.css for landing pages */
+
+@import 'reboot';
+
+// colors
+$voablue:  #1330bf;
+$voared:   #d41010;
+
+$offwhite: #fcfcfc;
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+#site-footer {
+	background-color: $voablue;
+	color: $offwhite;
+	text-align: center;
+}
+
+#site-footer p { margin: 0; }
+
+#site-footer a {
+	color: $offwhite;
+	display: inline-block;
+	padding: 1rem 0;
+	text-decoration: none;
+}
