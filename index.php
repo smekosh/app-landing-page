@@ -53,9 +53,15 @@ require_once( 'config.php' );
 <body class="<?php echo LANG; ?>" dir="<?php echo DIR; ?>">
 
 	<header id="site-header">
-		<div class="wrapper">
+		<div class="wrapper header-wrapper">
 			<div class="logo"><a href="<?php echo MAINSITE_URL; ?>"><img src="<?php echo BASE_URL; ?>/img/voa-logo_87x36_2x.png" width="87" height="36" border="0" alt="VOA" /></a></div>
-			<div class="social"></div>
+			<ul class="social">
+				<li><a href=""><img src="<?php echo BASE_URL; ?>/img/fa-facebook_72_12_ffffff_3b5998.png" width="36" height="36" border="0" alt="Facebook" /></a></li>
+				<li><a href=""><img src="<?php echo BASE_URL; ?>/img/fa-instagram_72_12_ffffff_d93175.png" width="36" height="36" border="0" alt="Instagram" /></a></li>
+				<li><a href=""><img src="<?php echo BASE_URL; ?>/img/fa-soundcloud_72_12_ffffff_ff5500.png" width="36" height="36" border="0" alt="Soundcloud" /></a></li>
+				<li><a href=""><img src="<?php echo BASE_URL; ?>/img/fa-twitter_72_12_ffffff_55acee.png" width="36" height="36" border="0" alt="Twitter" /></a></li>
+				<li><a href=""><img src="<?php echo BASE_URL; ?>/img/fa-youtube-play_72_12_ffffff_cd201f.png" width="36" height="36" border="0" alt="YouTube" /></a></li>
+			</ul>
 		</div>
 	</header>
 
