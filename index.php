@@ -1,11 +1,12 @@
 <?php
 
 require_once( 'config.php' );
+require_once( 'data.php' );
 
 ?><!DOCTYPE html>
 <html lang="<?php echo LANG; ?>">
 <head>
-	
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -38,12 +39,12 @@ require_once( 'config.php' );
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:description" content="" />
 	<meta name="twitter:image" content="" />
-	
+
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/css/base.css?rand=<?php echo time(); ?>" />
-	
+
 	<!-- documentation at https://polyfill.io/v2/docs/ -->
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-	
+
 	<meta name="DISPLAYDATE" content="December 00, 2017" />
 	<meta itemprop="dateModified" content="2017-12-29" />
 	<meta itemprop="datePublished" content="2017-12-29" />
