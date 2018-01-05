@@ -11,5 +11,5 @@
 	
 	<p>Video description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi lorem, tincidunt at eros eu, fringilla tempus nunc. Nulla risus turpis, efficitur non ipsum accumsan, sagittis finibus lectus.</p>
 
-	<p><a href="" class="yt-button">View on YouTube</a></p>
+	<p><a href="" class="yt-button"><?php echo $loc['youtube_button_text']; ?></a></p>
 </div> 

@@ -20,6 +20,13 @@ h1 {
 	width: 100%;
 }
 
+// hidden text for screenreaders
+.sr-only {
+	display: none;
+	overflow: hidden;
+	visibility: hidden;
+}
+
 #site-header {
 	background-color: $offwhite;
 	position: sticky;
