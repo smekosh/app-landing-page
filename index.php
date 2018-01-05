@@ -10,6 +10,14 @@ require_once( 'data.php' );
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W72N2D');</script>
+<!-- End Google Tag Manager -->
 
 	<title></title>
 
@@ -52,10 +60,14 @@ require_once( 'data.php' );
 </head>
 
 <body class="<?php echo LANG; ?>" dir="<?php echo DIR; ?>">
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W72N2D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 	<header id="site-header">
 		<div class="wrapper header-wrapper">
-			<div class="logo"><a href="<?php echo MAINSITE_URL; ?>"><img src="<?php echo BASE_URL; ?>/img/voa-logo_87x36_2x.png" width="87" height="36" border="0" alt="VOA" /></a></div>
+			<div class="logo"><a href="<?php echo MAINSITE_URL . TRACKING_PARAMETERS; ?>"><img src="<?php echo BASE_URL; ?>/img/voa-logo_87x36_2x.png" width="87" height="36" border="0" alt="VOA" /></a></div>
 			<ul class="social">
 				<li><a href="<?php echo $loc['facebook_follow_url']; ?>" title="<?php echo $loc['facebook_follow_text']; ?>"><img src="<?php echo BASE_URL; ?>/img/fa-facebook_72_12_ffffff_3b5998.png" width="36" height="36" border="0" alt="" /><span class="sr-only"><?php echo $loc['facebook_follow_text']; ?></span></a></li>
 				<li><a href="<?php echo $loc['instagram_follow_url']; ?>" title="<?php echo $loc['instagram_follow_text']; ?>"><img src="<?php echo BASE_URL; ?>/img/fa-instagram_72_12_ffffff_d93175.png" width="36" height="36" border="0" alt="" /><span class="sr-only"><?php echo $loc['instagram_follow_text']; ?></span></a></li>
@@ -79,7 +91,7 @@ require_once( 'data.php' );
 
 	<footer id="site-footer">
 		<div class="wrapper">
-			<p><a href="<?php echo MAINSITE_URL; ?>"><?php echo $loc['full_site_link_text']; ?></a></p>
+			<p><a href="<?php echo MAINSITE_URL . TRACKING_PARAMETERS; ?>"><?php echo $loc['full_site_link_text']; ?></a></p>
 		</div>
 	</footer>
 

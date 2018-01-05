@@ -149,7 +149,7 @@ h2.latest-news {
 	text-decoration: none;
 }
 
-.news-item:last-child {
+.news-item:nth-child(5n) {
 	border-bottom: none;
 }
 

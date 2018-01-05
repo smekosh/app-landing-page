@@ -12,14 +12,14 @@
 
 <?php foreach( $feed as $item ) { ?>
 
-	<a href="<?php echo $item["link"] ?>" class="news-item">
+	<a href="<?php echo $item["link"] . TRACKING_PARAMETERS; ?>" class="news-item">
 
 		<div class="news-img">
-			<img src="<?php echo $item["image"] ?>" />
+			<img src="<?php echo $item["image"]; ?>" />
 		</div>
 
 		<div class="news-text">
-			<h3><?php echo $item["title"] ?></h3>
+			<h3><?php echo $item["title"]; ?></h3>
 		</div>
 
 	</a>

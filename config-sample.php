@@ -11,6 +11,8 @@ define( 'DIR', 'ltr' ); // options: 'ltr' or 'rtl'
 define( 'BASE_URL',  'http://localhost/thispage' ); // no trailing slash
 define( 'MAINSITE_URL', 'http://localhost' ); // trailing slash ok
 
+define( 'TRACKING_PARAMETERS', '?src=tracking-parameters' );
+
 // localizations for text
 $loc = array(
 	'facebook_follow_text'       => 'Facebook',

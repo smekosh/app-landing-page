@@ -388,7 +388,7 @@ h2.latest-news {
   padding: .75rem 0;
   text-decoration: none; }
 
-.news-item:last-child {
+.news-item:nth-child(5n) {
   border-bottom: none; }
 
 .news-item:hover {
