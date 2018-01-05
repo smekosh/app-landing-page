@@ -16,6 +16,7 @@ $loc = array(
 	'full_site_link_text'        => 'Click here to switch to the full site',
 	'instagram_follow_text'      => 'Instagram',
 	'instagram_follow_url'       => 'https://www.instagram.com/userslug',
+	'latest_news_heading'        => 'Latest News',
 	'meta_og_site_name'          => 'Site Name',
 	'meta_twitter_creator'       => 'TwitterHandle', /* do not include the '@' */
 	'soundcloud_follow_text'     => 'Soundcloud',

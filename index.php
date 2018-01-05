@@ -65,7 +65,7 @@ require_once( 'config.php' );
 		</div>
 	</header>
 
-	<main id="content">
+	<main id="content" class="wrapper-nopad">
 		<section class="live-video">
 			<?php require_once( 'inc/live-video.php' ); ?>
 		</section>
