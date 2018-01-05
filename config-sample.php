@@ -2,7 +2,9 @@
 
 /* config file for app landing page */
 
-
+define( 'YT_KEY', '' );
+define( 'CHANNEL', '' );
+define( 'RSS', '' );
 
 define( 'LANG', 'en' );
 define( 'DIR', 'ltr' ); // options: 'ltr' or 'rtl'
