@@ -11,5 +11,5 @@
 
 	<p><?php echo $youtube->snippet->description ?></p>
 
-	<div><a href="" class="yt-button"><?php echo $loc['youtube_button_text']; ?></a></div>
+	<div><a href="https://www.youtube.com/watch?v=<?php echo $youtube->id->videoId ?>" class="yt-button"><?php echo $loc['youtube_button_text']; ?></a></div>
 </div>
