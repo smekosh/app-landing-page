@@ -4,12 +4,12 @@
 
 ?>
 
-<div class="yt-embed"><iframe src='https://www.youtube.com/embed/PyVB40SYem8' frameborder='0' gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+<div class="yt-embed"><iframe src='https://www.youtube.com/embed/<?php echo $youtube->id->videoId ?>' frameborder='0' gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
 
 <div class="wrapper yt-meta">
-	<h1>Video Title Goes Here</h1>
-	
-	<p>Video description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi lorem, tincidunt at eros eu, fringilla tempus nunc. Nulla risus turpis, efficitur non ipsum accumsan, sagittis finibus lectus.</p>
+	<h1><?php echo $youtube->snippet->title ?></h1>
+
+	<p><?php echo $youtube->snippet->description ?></p>
 
 	<div><a href="" class="yt-button"><?php echo $loc['youtube_button_text']; ?></a></div>
-</div> 
+</div>

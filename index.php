@@ -67,10 +67,11 @@ require_once( 'data.php' );
 	</header>
 
 	<main id="content" class="wrapper-nopad">
+<?php if( $youtube !== false ) { ?>
 		<section class="live-video">
 			<?php require_once( 'inc/live-video.php' ); ?>
 		</section>
-
+<?php } ?>
 		<section class="news">
 			<?php require_once( 'inc/news-feed.php' ); ?>
 		</section>
