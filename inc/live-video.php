@@ -4,7 +4,30 @@
 
 ?>
 
-<div class="yt-embed"><iframe src='https://www.youtube.com/embed/<?php echo $youtube->id->videoId ?>' frameborder='0' gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+<div id="yt-embed-container" class="yt-embed"><img src="<?php echo $youtube->snippet->thumbnails->high->url ?>" /></div>
+
+<script>
+// bandwidth saver: click to replace youtube thumbnail with video iframe
+(function() {
+	var player = document.getElementById('yt-embed-container');
+
+	function has_iframe() {
+		var e = document.querySelector('#yt-embed-container iframe');
+		if( e === null ) {
+			return( false );
+		}
+		return( true );
+	}
+
+	player.addEventListener("click", function() {
+		if( has_iframe() !== false ) return;
+		console.info( "creating player");
+		player.innerHTML =
+			"<iframe src='https://www.youtube.com/embed/<?php echo $youtube->id->videoId ?>' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>"
+		;
+	});
+})();
+</script>
 
 <div class="wrapper yt-meta">
 	<h1><?php echo $youtube->snippet->title ?></h1>
