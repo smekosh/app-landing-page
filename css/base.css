@@ -330,7 +330,8 @@ ul.social > li {
 
 .yt-embed iframe,
 .yt-embed object,
-.yt-embed embed {
+.yt-embed embed,
+.yt-embed img {
   position: absolute;
   top: 0;
   left: 0;
