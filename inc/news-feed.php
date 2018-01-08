@@ -15,7 +15,7 @@
 	<a href="<?php echo $item["link"] . TRACKING_PARAMETERS; ?>" class="news-item">
 
 		<div class="news-img">
-			<img src="<?php echo $item["image"]; ?>" />
+			<img src="<?php echo pangea_image($item["image"], "_w200"); ?>" />
 		</div>
 
 		<div class="news-text">
