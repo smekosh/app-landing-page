@@ -4,7 +4,10 @@
 
 ?>
 
-<div id="yt-embed-container" class="yt-embed"><img src="<?php echo $youtube->snippet->thumbnails->high->url ?>" /></div>
+<div id="yt-embed-container" class="yt-embed">
+	<div class="yt-overlay"></div>
+	<div class="yt-placeholder" style="background-image: url(<?php echo $youtube->snippet->thumbnails->high->url ?>;"></div>
+</div>
 
 <script>
 // bandwidth saver: click to replace youtube thumbnail with video iframe
