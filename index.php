@@ -59,7 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 
-<body class="<?php echo LANG; ?>" dir="<?php echo DIR; ?>">
+<body class="<?php echo LANG; ?> <?php echo DIR; ?>" dir="<?php echo DIR; ?>">
 	
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W72N2D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
