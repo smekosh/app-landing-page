@@ -24,9 +24,11 @@
 
 	player.addEventListener("click", function() {
 		if( has_iframe() !== false ) return;
-		console.info( "creating player");
 		player.innerHTML =
-			"<iframe src='https://www.youtube.com/embed/<?php echo $youtube->id->videoId ?>' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>"
+			// triggers gtm event?
+			"<script src='https://www.youtube.com/iframe_api'><" + "/script>" +
+			// autoplays since user already intended to watch video
+			"<iframe src='https://www.youtube.com/embed/<?php echo $youtube->id->videoId ?>?&autoplay=1' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>"
 		;
 	});
 })();
