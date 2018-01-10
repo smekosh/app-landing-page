@@ -22,6 +22,7 @@ $loc = array(
 	'instagram_follow_url'       => 'https://www.instagram.com/userslug',
 	'latest_news_heading'        => 'Latest News',
 	'meta_og_site_name'          => 'Site Name',
+	'meta_title'                 => 'Meta Title',
 	'meta_twitter_creator'       => 'TwitterHandle', /* do not include the '@' */
 	'soundcloud_follow_text'     => 'Soundcloud',
 	'soundcloud_follow_url'      => 'https://www.soundcloud.com/userslug',
