@@ -1,6 +1,13 @@
 <?php
 require_once("config.php");
 
+# should be present in config.php
+if( !defined("DATA_PROCESSOR") ) {
+    include( "data-rss.php" );
+} else {
+    include( DATA_PROCESSOR );
+}
+
 // input: .../D5921321-4026-4320-91DE-9844CDAE720B_w800_h450.jpg
 // output without any parameters: .../D5921321-4026-4320-91DE-9844CDAE720B.jpg
 // output with a custom parameter inserts $custom before .jpg (ex: _w300)
@@ -61,27 +68,5 @@ function get_yt_data() {
     return( $data->items[0] );
 }
 
-function get_rss($limit = 10) {
-    $raw = file_get_contents(RSS);
-    $feed = simplexml_load_string($raw);
-    $items = array();
-
-    foreach( $feed->channel->item as $k => $item ) {
-
-        if( count($items) >= $limit ) break;
-
-        $one = array(
-            "link" => (String)$item->link,
-            "image" => (String)$item->enclosure->attributes()->url,
-            "title" => (String)$item->title
-        );
-
-        // w = 200 ?
-
-        $items[] = $one;
-    }
-    return( $items );
-}
-
-$feed = get_rss();
+$feed = get_feed(RSS);
 $youtube = get_yt_data();
