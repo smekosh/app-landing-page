@@ -302,18 +302,23 @@ body.rtl .news-item .news-text {
 	
 	h2.latest-news {
 		text-align: left;
+		padding: .5em 2em;
 	}
 	
 	.news-feed {
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
-		-moz-column-gap: 3rem;
-		-webkit-column-gap: 3rem;
-		column-gap: 3rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
-
-	.news-item:nth-child(5n) {
+	
+	.news-item {
+		flex: 0 1 calc(50% - 1rem);
+		margin: 0;
+		padding: 1rem;
+	}
+	
+	.news-item:nth-child(9n) {
 		border-bottom: none;
 	}
 
