@@ -5,6 +5,8 @@
 define( 'YT_KEY', '' );
 define( 'CHANNEL', '' );
 define( 'RSS', '' );
+# define( 'DATA_PROCESSOR', '' );   # for the alternate data stream
+# define( 'RELATIVE_PREFIX', '' );  # for the alternate data stream
 
 define( 'LANG', 'en' );
 define( 'DIR', 'ltr' ); // options: 'ltr' or 'rtl'
