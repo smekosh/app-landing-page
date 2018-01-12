@@ -60,6 +60,8 @@ function get_yt_url() {
 }
 
 function get_yt_data() {
+    if( !defined('CHANNEL') ) return( false );
+
     $url = get_yt_url();
     $data = json_decode(file_get_contents($url));
 
