@@ -1,3 +1,4 @@
 config.php
 *.scssc
 *.map
+metrics.php
