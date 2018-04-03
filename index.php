@@ -58,6 +58,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta itemprop="datePublished" content="<?php echo date('Y-m-d'); ?>" />
 	
 	<meta name="robots" content="noindex, follow" />
+	
+	<?php if (file_exists('inc/optimizer.php')) { include('inc/optimizer.php'); } ?>
 
 </head>
 
