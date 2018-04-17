@@ -14,7 +14,7 @@ define( 'DIR', 'ltr' ); // options: 'ltr' or 'rtl'
 define( 'BASE_URL',  'http://localhost/thispage' ); // no trailing slash
 define( 'MAINSITE_URL', 'http://localhost' ); // trailing slash ok
 
-define( 'TRACKING_PARAMETERS', '?trk1&utm_medium=proxy&utm_source=psiphon&utm_campaign=psiphon-landing-pages&utm_term=<LANGUAGE SERVICE>' );
+define( 'TRACKING_PARAMETERS', '?utm_medium=proxy&utm_campaign=psiphon-landing-pages&utm_source=psiphon&utm_content=<LANGUAGE SERVICE>' );
 
 // localizations for text
 $loc = array(
