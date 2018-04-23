@@ -48,7 +48,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<?php /* <meta name="twitter:description" content="" />
 	<meta name="twitter:image" content="" /> */ ?>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/css/base.css?v=20180109-1358" />
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/css/base.css?v=20180423-1718" />
 
 	<!-- documentation at https://polyfill.io/v2/docs/ -->
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
@@ -81,6 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<?php if ( $loc['twitter_follow_url'] != '' ) { ?><li><a href="<?php echo $loc['twitter_follow_url']; ?>" title="<?php echo $loc['twitter_follow_text']; ?>"><img src="<?php echo BASE_URL; ?>/img/fa-twitter_72_12_ffffff_55acee.png" width="36" height="36" border="0" alt="" /><span class="sr-only"><?php echo $loc['twitter_follow_text']; ?></span></a></li><?php } ?>
 				<?php if ( $loc['youtube_follow_url'] != '' ) { ?><li><a href="<?php echo $loc['youtube_follow_url']; ?>" title="<?php echo $loc['youtube_follow_text']; ?>"><img src="<?php echo BASE_URL; ?>/img/fa-youtube-play_72_12_ffffff_cd201f.png" width="36" height="36" border="0" alt="" /><span class="sr-only"><?php echo $loc['youtube_follow_text']; ?></span></a></li><?php } ?>
 			</ul>
+			<div style="clear:both;"></div>
 		</div>
 	</header>
 
