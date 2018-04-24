@@ -48,7 +48,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<?php /* <meta name="twitter:description" content="" />
 	<meta name="twitter:image" content="" /> */ ?>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/css/base.css?v=20180423-1810" />
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/css/base.css?v=20180424-1605" />
 
 	<!-- documentation at https://polyfill.io/v2/docs/ -->
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
