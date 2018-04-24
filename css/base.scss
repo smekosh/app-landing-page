@@ -329,7 +329,7 @@ body.rtl .news-item .news-text {
 		border-top: none;
 	}
 
-	.news-item:nth-child(1n+2) {
+	.news-item:nth-child(2n+1) {
 		padding-right: 2rem;
 	}
 	
